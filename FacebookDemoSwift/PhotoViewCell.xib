@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photocell" rowHeight="165" id="KGk-i7-Jjw" customClass="PhotoViewCell" customModule="FacebookDemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Message" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c52-So-AEj">
+                        <rect key="frame" x="189" y="19" width="229" height="132"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMs-ei-YgU">
+                        <rect key="frame" x="17" y="13" width="152" height="138"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="138" id="ESB-lq-nNs"/>
+                            <constraint firstAttribute="width" constant="152" id="FIR-FR-IbX"/>
+                            <constraint firstAttribute="width" constant="152" id="Fso-L0-f6x"/>
+                            <constraint firstAttribute="height" constant="138" id="nME-gC-6Rf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FIR-FR-IbX"/>
+                                <exclude reference="nME-gC-6Rf"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lMs-ei-YgU" secondAttribute="bottom" constant="13.5" id="GA5-rn-iiv"/>
+                    <constraint firstAttribute="bottom" secondItem="c52-So-AEj" secondAttribute="bottom" constant="14" id="MRz-Pb-qib"/>
+                    <constraint firstAttribute="trailing" secondItem="c52-So-AEj" secondAttribute="trailing" constant="14" id="P1P-g6-k8Q"/>
+                    <constraint firstItem="lMs-ei-YgU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="RHQ-nu-KDL"/>
+                    <constraint firstItem="c52-So-AEj" firstAttribute="leading" secondItem="lMs-ei-YgU" secondAttribute="trailing" constant="20" id="Stt-G5-quh"/>
+                    <constraint firstItem="c52-So-AEj" firstAttribute="leading" secondItem="lMs-ei-YgU" secondAttribute="trailing" constant="20" id="T4W-1w-3PZ"/>
+                    <constraint firstItem="c52-So-AEj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="WGq-hm-Zi5"/>
+                    <constraint firstItem="lMs-ei-YgU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="kfa-g1-XJ1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="c52-So-AEj" id="J9Y-r1-4FO"/>
+                <outlet property="photoImage" destination="lMs-ei-YgU" id="MDf-Xc-21T"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="214.5"/>
+        </tableViewCell>
+    </objects>
+</document>
